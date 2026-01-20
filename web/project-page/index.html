@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-commerce Delivery Prediction | Abrar Ahsan Purno</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>E-commerce Delivery Prediction</h1>
+      <p class="subtitle">
+        Predicting on-time shipment delivery using Machine Learning
+      </p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section">
+    <div class="container">
+      <h2>About the Project</h2>
+      <p>
+        This project aims to predict whether an e-commerce shipment will reach
+        the customer on time based on shipment, product, and customer-related
+        features. The project was developed as part of the
+        <strong>CSE422: Artificial Intelligence</strong> course and applies both
+        supervised and unsupervised learning techniques.
+      </p>
+    </div>
+  </section>
+
+  <!-- Dataset -->
+  <section class="section light">
+    <div class="container">
+      <h2>Dataset Overview</h2>
+      <ul>
+        <li><strong>Total Samples:</strong> 10,999</li>
+        <li><strong>Input Features:</strong> 11</li>
+        <li><strong>Target Variable:</strong> Reached.on.Time_Y.N (Binary)</li>
+        <li><strong>Feature Types:</strong> Numerical & Categorical</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Models -->
+  <section class="section">
+    <div class="container">
+      <h2>Models Used</h2>
+      <div class="cards">
+        <div class="card">Logistic Regression</div>
+        <div class="card">K-Nearest Neighbors (KNN)</div>
+        <div class="card">Decision Tree</div>
+        <div class="card">Neural Network</div>
+        <div class="card">K-Means Clustering (Unsupervised)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section light">
+    <div class="container">
+      <h2>Results & Insights</h2>
+      <p>
+        All supervised models achieved comparable accuracy; however, due to
+        dataset imbalance, evaluation was performed using precision, recall,
+        F1-score, and ROC–AUC. The Neural Network demonstrated the most balanced
+        overall performance across these metrics.
+      </p>
+      <ul>
+        <li><strong>Best Model:</strong> Neural Network</li>
+        <li><strong>Accuracy:</strong> ~68%</li>
+        <li><strong>ROC–AUC:</strong> &gt; 0.7</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Figures -->
+<section class="section">
+  <div class="container">
+    <h2>Project Visualizations</h2>
+
+    <div class="figure">
+      <img src="assets/heatmap.png" alt="Correlation Heatmap">
+      <p class="caption">
+        Correlation heatmap showing relationships between numerical features and the target variable.
+      </p>
+    </div>
+
+    <div class="figure">
+      <img src="assets/class_distribution.png" alt="Class Distribution">
+      <p class="caption">
+        Distribution of on-time and delayed shipments, highlighting class imbalance.
+      </p>
+    </div>
+
+    <div class="figure">
+      <img src="assets/elbow_method.png" alt="Elbow Method">
+      <p class="caption">
+        Elbow method used to determine the optimal number of clusters for K-Means.
+      </p>
+    </div>
+
+    <div class="figure">
+      <img src="assets/model_accuracy.png" alt="Model Accuracy Comparison">
+      <p class="caption">
+        Accuracy comparison of supervised learning models.
+      </p>
+    </div>
+
+    <div class="figure">
+      <img src="assets/roc_curve.png" alt="ROC Curve">
+      <p class="caption">
+        ROC curve comparison demonstrating model discriminative performance.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Links -->
+  <section class="section">
+    <div class="container">
+      <h2>Project Links</h2>
+      <div class="links">
+        <a href="#" target="_blank">GitHub Repository</a>
+        <a href="#" target="_blank">Project Report (PDF)</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      © 2026 | Abrar Ahsan Purno <br/>
+      CSE422: Artificial Intelligence
+    </p>
+  </footer>
+
+</body>
+</html>
